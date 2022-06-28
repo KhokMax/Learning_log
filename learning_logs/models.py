@@ -2,7 +2,6 @@ from ast import mod
 from cgitb import text
 import re
 from tabnanny import verbose
-from tkinter import E
 from django.db import models
 from django.contrib.auth.models import User
 
