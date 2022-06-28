@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-
 import os
 from pathlib import Path
 
@@ -136,15 +135,12 @@ BOOTSTRAP3 = {
  'include_jquery': True,
  }
 
-
-# Heroku Settings
 if os.getcwd() == '/app':
     import dj_database_url
-
     DATABASES = {
         'default': dj_database_url.config(default='postgres://localhost')
     }
- 
+    
     # Поддержка заголовка 'X-Forwarded-Proto' для request.is_secure().
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
@@ -153,9 +149,7 @@ if os.getcwd() == '/app':
 
     # Конфигурация статических ресурсов
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
     STATIC_ROOT = 'staticfiles'
-    
     STATICFILES_DIRS = (
         os.path.join(BASE_DIR, 'static'),
-)
+    )
