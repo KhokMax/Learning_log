@@ -61,7 +61,7 @@ ROOT_URLCONF = 'learning_log.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'learning_log/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -136,7 +136,7 @@ BOOTSTRAP3 = {
  }
 
 
-
+"""
 import dj_database_url
 
 DATABASES = {
@@ -147,7 +147,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 # Хостом проекта может быть только Heroku.
-ALLOWED_HOSTS = ['learning-log-by-max.herokuapp.com']
+ALLOWED_HOSTS = ['learning-log.herokuapp.com']
 DEBUG = False
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -156,3 +156,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+"""
