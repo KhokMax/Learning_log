@@ -136,7 +136,7 @@ BOOTSTRAP3 = {
  }
 
 
-"""
+
 import dj_database_url
 
 DATABASES = {
@@ -156,4 +156,3 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-"""
