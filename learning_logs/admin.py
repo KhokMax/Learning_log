@@ -1,5 +1,4 @@
 from re import A
-from tkinter import E
 from django.contrib import admin
 
 from learning_logs.models import Topic, Entry
