@@ -147,7 +147,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 # Хостом проекта может быть только Heroku.
-ALLOWED_HOSTS = ['learning-log.herokuapp.com']
+ALLOWED_HOSTS = ['learning-log-by-max.herokuapp.com']
 DEBUG = False
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
